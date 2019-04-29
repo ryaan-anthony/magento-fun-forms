@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <RyaanAnthony_FunForms>
+            <version>0.1.0</version>
+        </RyaanAnthony_FunForms>
+    </modules>
+
+    <global>
+        <helpers>
+            <funforms>
+                <class>RyaanAnthony_FunForms_Helper</class>
+            </funforms>
+        </helpers>
+        <blocks>
+            <funforms>
+                <class>RyaanAnthony_FunForms_Block</class>
+            </funforms>
+        </blocks>
+        <models>
+            <funforms>
+                <class>RyaanAnthony_FunForms_Model</class>
+                <resourceModel>funforms_resource</resourceModel>
+            </funforms>
+            <funforms_resource>
+                <class>RyaanAnthony_FunForms_Model_Resource</class>
+                <entities>
+                    <formdata>
+                        <table>funforms_formdata</table>
+                    </formdata>
+                </entities>
+            </funforms_resource>
+        </models>
+        <resources>
+            <funforms_setup>
+                <setup>
+                    <module>RyaanAnthony_FunForms</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </funforms_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <funforms>
+                    <file>funforms.xml</file>
+                </funforms>
+            </updates>
+        </layout>
+        <routers>
+            <funforms>
+                <use>standard</use>
+                <args>
+                    <module>RyaanAnthony_FunForms</module>
+                    <frontName>funforms</frontName>
+                </args>
+            </funforms>
+        </routers>
+    </frontend>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <funforms before="Mage_Adminhtml">RyaanAnthony_FunForms_Adminhtml</funforms>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <funforms>
+                    <file>funforms.xml</file>
+                </funforms>
+            </updates>
+        </layout>
+    </adminhtml>
+
+</config>

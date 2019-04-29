@@ -1,0 +1,8 @@
+# Mappings
+src/etc/modules.xml                     app/etc/modules/RyaanAnthony_FunForms.xml
+src/etc/config.xml                      app/code/community/etc/config.xml
+src/views/frontend/form.phtml           app/design/frontend/base/default/template/funforms/form.phtml
+src/views/frontend/layout.xml           app/design/frontend/base/default/layout/funforms.xml
+src/views/adminhtml/submissions.phtml   app/design/adminhtml/default/default/template/submissions.phtml
+src/views/adminhtml/layout.xml          app/design/adminhtml/default/default/layout/funforms.xml
+src/sql/install-0.1.0.php               app/code/community/sql/funforms_setup/install-0.1.0.php

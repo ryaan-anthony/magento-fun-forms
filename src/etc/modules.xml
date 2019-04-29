@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <RyaanAnthony_FunForms>
+            <active>true</active>
+            <codePool>community</codePool>
+        </RyaanAnthony_FunForms>
+    </modules>
+</config>
